@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactCardFlip from 'react-card-flip';
+import { Button } from 'react-bootstrap';
 
 import './ProjectCard.css';
 
@@ -23,13 +24,13 @@ class ProjectCard extends Component {
                     <div className="Description">
                         <h2>{this.props.title}</h2>
                         <p>{this.props.description}</p>
-                        <button onClick={(event) => this.flipHandler(event)}>See More</button>
+                        <Button variant="outline-info" onClick={(event) => this.flipHandler(event)}>See More</Button>
                     </div>
                 </div>
                 <div className="Card" onMouseLeave={(event) => this.flipHandler(event)}>
                     <div className="Description" >
                         <p>{this.props.details}</p> <br />
-                        <a href={this.props.demo} target="_blank" className="btnLink">Demo</a>
+                        <Button variant="outline-info" href={this.props.demo} target="_blank">Demo</Button>
                     </div>
                 </div>
             </ReactCardFlip>
