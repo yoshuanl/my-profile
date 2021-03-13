@@ -27,7 +27,7 @@ class ProjectCard extends Component {
                 <div className="Card">
                     <img src={this.props.image} width="600" height="330" />
                     <div className="Description">
-                        <h2>{this.props.title}</h2>
+                        <h2><strong>{this.props.title}</strong></h2>
                         <p>{this.props.description}</p> <br />
                         <div className="SeeMoreBtn">
                             <Button variant="outline-info" onClick={(event) => this.flipHandler(event)}>See More</Button>
