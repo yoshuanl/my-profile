@@ -28,8 +28,10 @@ class ProjectCard extends Component {
                     <img src={this.props.image} width="600" height="330" />
                     <div className="Description">
                         <h2>{this.props.title}</h2>
-                        <p>{this.props.description}</p>
-                        <Button variant="outline-info" onClick={(event) => this.flipHandler(event)}>See More</Button>
+                        <p>{this.props.description}</p> <br />
+                        <div className="SeeMoreBtn">
+                            <Button variant="outline-info" onClick={(event) => this.flipHandler(event)}>See More</Button>
+                        </div>
                     </div>
                 </div>
                 <div className="Card" onMouseLeave={(event) => this.flipHandler(event)}>
