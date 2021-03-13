@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
 import ProjectCards from '../../components/ProjectCards/ProjectCards';
+import SocialIcons from '../../containers/SocialIcons/SocialIcons';
 
 class Layout extends Component {
     render() {
@@ -8,7 +9,8 @@ class Layout extends Component {
             <Fragment>
                 <h1>- My Projects -</h1>
                 <ProjectCards />
-                <div>footer: social icons, copyright</div>
+                <SocialIcons />
+                <p>©2021 YoShuanLiu</p>
             </Fragment>
         )
     }
