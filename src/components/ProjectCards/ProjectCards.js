@@ -25,7 +25,8 @@ const ProjectCards = () => {
                         title="Structure Data Search Engine"
                         description="A search engine for structure data, utilizing reverse indexing and lazy data fetching."
                         details="To Be Add"
-                        demo="https://yoshuanl.github.io/searchEngine.github.io/" />
+                        demo="https://yoshuanl.github.io/searchEngine.github.io/"
+                        sourceCode="https://github.com/yoshuanl/searchEngine.github.io" />
                 </Col>
             </Row>
         </Container>

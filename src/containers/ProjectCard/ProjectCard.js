@@ -17,6 +17,11 @@ class ProjectCard extends Component {
     }
 
     render() {
+        var sourceButton = null;
+        if (this.props.sourceCode) {
+            sourceButton = <Button variant="outline-info" href={this.props.sourceCode} target="_blank">Source Code</Button>
+        }
+
         return (
             <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
                 <div className="Card">
@@ -30,7 +35,8 @@ class ProjectCard extends Component {
                 <div className="Card" onMouseLeave={(event) => this.flipHandler(event)}>
                     <div className="Description" >
                         <p>{this.props.details}</p> <br />
-                        <Button variant="outline-info" href={this.props.demo} target="_blank">Demo</Button>
+                        <Button variant="outline-info" href={this.props.demo} target="_blank" margin="5px">Demo</Button>{' '}
+                        {sourceButton}
                     </div>
                 </div>
             </ReactCardFlip>
