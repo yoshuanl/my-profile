@@ -22,6 +22,20 @@ class ProjectCard extends Component {
             sourceButton = <Button variant="outline-info" href={this.props.sourceCode} target="_blank">Source Code</Button>
         }
 
+        var detailArray = [];
+        for (let id in this.props.details) {
+            detailArray.push(
+                {
+                    idx: id,
+                    content: this.props.details[id]
+                }
+            )
+        }
+
+        const detailOutput = detailArray.map(x => {
+            return <li key={x.id}>{x.content}</li>
+        })
+
         return (
             <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
                 <div className="Card">
@@ -36,8 +50,8 @@ class ProjectCard extends Component {
                 </div>
                 <div className="Card" onMouseLeave={(event) => this.flipHandler(event)}>
                     <div className="Description" >
-                        <p>{this.props.details}</p> <br />
-                        <Button variant="outline-info" href={this.props.demo} target="_blank" margin="5px">Demo</Button>{' '}
+                        <ul>{detailOutput}</ul> <br />
+                        <Button variant="outline-info" href={this.props.demo} target="_blank">Demo</Button>{' '}
                         {sourceButton}
                     </div>
                 </div>
