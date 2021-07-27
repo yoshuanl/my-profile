@@ -11,6 +11,7 @@ const ProjectCards = () => {
         <Container fluid>
             <Row>
                 <Col>
+                    {/* 16-20 words of description */}
                     <ProjectCard
                         image={beeImage}
                         title="Bee Your Bookkeeper"
@@ -22,8 +23,8 @@ const ProjectCards = () => {
                 <Col>
                     <ProjectCard
                         image={sqlImage}
-                        title="Structure Data Search Engine"
-                        description="A search engine which allows user to search keywords in choosen SQL databases."
+                        title="Data Exploration Interface"
+                        description="A keyword-driven interface which allows user to explore the data via their foreign-key relationships."
                         details={["Languages: Python, Javascript, SQL", "Frontend: jQuery", "Database: utilize invert indexing in Firebase",]}
                         demo="https://yoshuanl.github.io/searchEngine.github.io/"
                         sourceCode="https://github.com/yoshuanl/searchEngine.github.io" />
