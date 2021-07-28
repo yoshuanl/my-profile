@@ -4,11 +4,15 @@
 }
 
 .Name {
-  height: 50px;
+  height: 30px;
   width: 500px;
-  margin: 30px;
-  font-size: 38px;
+  margin: 20px;
+  font-size: 35px;
   font-weight: bold;
   text-align: left;
+}
+
+.Icon {
+  font-size: 30px;
 }
 
